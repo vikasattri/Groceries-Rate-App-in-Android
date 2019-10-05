@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+
+        android:layout_marginTop="60dp"
+        android:text="Login As"
+        android:textColor="#AB1D51"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Shopkeeper"
+        android:textSize="20dp"
+        android:onClick="shopkeeper"
+        android:background="@drawable/round"
+        android:id="@+id/shopkeeper"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="120dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Customer"
+        android:requiresFadingEdge="vertical"
+        android:textSize="20dp"
+        android:background="@drawable/round"
+        android:id="@+id/customer"
+        android:onClick="customer"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:alpha="0.6"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="LOGIN"
+        android:textStyle="italic"
+        android:textSize="70sp"
+        android:id="@+id/textView"
+        android:textColor="#ea25d3"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/txtemailc"
+        android:drawablePadding="10dp"
+
+        android:hint="Enter UserName"
+        android:textColorHint="#cccccc"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:drawablePadding="10dp"
+        android:hint="Enter Password"
+        android:textSize="20sp"
+        android:textColorHint="#cccccc"
+        android:textColor="#FFFFFF"
+        android:id="@+id/txtpassc"
+        android:layout_below="@+id/txtemailc"
+        android:layout_alignLeft="@+id/txtemailc"
+        android:layout_alignStart="@+id/txtemailc"
+        android:layout_alignRight="@+id/txtemailc"
+        android:layout_alignEnd="@+id/txtemailc" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:text="SIGN IN"
+        android:onClick="cloginc"
+        android:textSize="20sp"
+        android:id="@+id/btnsignin"
+        android:layout_below="@+id/txtpassc"
+        android:layout_marginTop="6dp"
+        android:layout_alignLeft="@+id/txtpassc"
+        android:layout_alignStart="@+id/txtpassc"
+        android:layout_alignRight="@+id/txtpassc"
+        android:layout_alignEnd="@+id/txtpassc" />
+    <Button
+        android:layout_width="fill_parent"
+        android:onClick="signupc"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:text="Register"
+        android:textSize="20sp"
+        android:id="@+id/btnreg"
+        android:layout_below="@+id/txtpassc"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="200dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="New User? Sign up here"
+        android:id="@+id/tv"
+        android:textColor="#ffffff"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/btnsignin"
+        android:layout_marginLeft="200dp"
+        />
+
+</RelativeLayout>
